@@ -69,12 +69,6 @@ class GovBrOAuthController extends Controller
 
     private function getConfiguration(): array
     {
-        //NEXT_PUBLIC_=https://sso.staging.acesso.gov.br
-        //GOVBR_URL_SERVICE=https://api.staging.acesso.gov.br
-        //GOVBR_REDIRECT_URI=http://agatha.test/gestaoriscos/api/login/openid
-        //GOVBR_SCOPES=openid+email+phone+profile
-        //GOVBR_CLIENT_ID=agatha.pre.intra.economia
-        //GOVBR_SECRET=CcUFSi0uW8U2DGyOGo3OjD2OG25D89AWC2TW3OHeNNUba2PtoP42rbbqyeG4FLOIRmCrHUKpmzqPQ44fhFgNvg
         return [
             'URL_PROVIDER' => env('GOVBR_URL_PROVIDER'),
             'URL_SERVICE' => env('GOVBR_URL_SERVICE'),
